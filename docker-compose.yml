@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: nginx:alpine  # Menggunakan image Nginx berbasis Alpine Linux
+    volumes:
+      - ./fahrezi:/usr/share/nginx/html  # Menyambungkan folder lokal ke direktori Nginx
+    ports:
+      - "8080:80"  # Mengarahkan port 8080 pada host ke port 80 di dalam kontainer
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
