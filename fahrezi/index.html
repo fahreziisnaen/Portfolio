@@ -24,6 +24,67 @@
     <link rel="stylesheet" href="css/uicons-brands.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        @media (max-width: 1199px) {
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar > .container {
+                width: 100%;
+                max-width: none;
+                padding: 0 15px;
+            }
+
+            #ftco-nav {
+                width: 100%;
+            }
+
+            .navbar-nav {
+                flex-direction: row !important;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+            
+            .navbar-nav .nav-item {
+                flex: 0 0 auto;
+                margin: 0 5px;
+            }
+            
+            .navbar-nav .nav-link {
+                padding: 0.5rem 0.8rem !important;
+                font-size: 0.9rem;
+                white-space: nowrap;
+            }
+
+            /* Scrollbar styling */
+            .navbar-nav::-webkit-scrollbar {
+                height: 3px;
+            }
+            
+            .navbar-nav::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.1);
+            }
+            
+            .navbar-nav::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 3px;
+            }
+        }
+
+        /* Ensure navbar is sticky and has proper z-index */
+        #ftco-navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1030;
+        }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -44,36 +105,36 @@
         >
           <i class="oi oi-menu" style="color: aliceblue"></i>
         </button>
-      </div>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item">
-            <a href="#home-section" class="nav-link"><span>Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#about-section" class="nav-link"><span>About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#resume-section" class="nav-link"><span>Resume</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#services-section" class="nav-link"
-              ><span>Experience</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#skills-section" class="nav-link"><span>Skills</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects-section" class="nav-link"
-              ><span>Certifications</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link"><span>Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#services-section" class="nav-link"
+                ><span>Experience</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#skills-section" class="nav-link"><span>Skills</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects-section" class="nav-link"
+                ><span>Certifications</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
